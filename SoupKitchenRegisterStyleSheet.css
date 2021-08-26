@@ -1,0 +1,50 @@
+body{
+	border: 2px solid #fff;
+	margin:20px 20px;
+	text-align:center;
+	padding:50;
+	color:#fff;
+	z-index:-1;
+	background:url("HomePanel.jpeg");
+	}
+	
+.links{
+	position:absolute;
+	top:50%;
+	left:40%;
+	transform: translateX(-50%) translateY(-50);
+}
+
+li{
+	display: inline-block;
+}
+
+li a{
+	text-decoration:none;
+	display:inline-block;
+	color:#fff;
+	font-family: Source Sans Pro;
+	font-weight:lighter;
+	font-size: 28px;
+	padding:0 20px;
+}
+
+.styler::after{
+	content: '';
+	display:block;
+	width:0;
+	height:2px;
+	background:#fff;
+	transition: width .3s
+
+}
+
+.styler:hover::after{
+	width:100%;
+	transition: width .3s;
+}
+
+.links {
+	
+	padding:10px 20px;
+}
