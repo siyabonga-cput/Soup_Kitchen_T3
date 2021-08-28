@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="RecoverStyleSheet.css" rel="StyleSheet" type="text/css">
+<link href="RecoveryButtonStyle.css" rel="StyleSheet" type="text/css">
+</head>
+<script>
+function Return()
+{
+window.open('Login.html');
+close();
+}
+function information(form)
+{
+	var Name=["Daniel"];	  
+	var Username=["Daniel123"];
+	var Password=["jadan0721"];
+	var Surname=["Marais"];
+	var Title1=["Mr."];
+	var Gender=["Male"];
+	var Age1=["15 to 25"];
+var getName;
+var getSurname;
+var getUser;
+var getPass;
+var Title;
+var getGender; 
+var AgeG;
+var icount=0;
+var ExSurn=localStorage.getItem("NewSurname1");
+var ExUser=localStorage.getItem("NewUser1");
+var ExName=localStorage.getItem("NewName1"); 
+var ExTitle=localStorage.getItem("NewTitle1"); 
+var ExGender=localStorage.getItem("NewGender1"); 
+var ExAge=localStorage.getItem("NewAge1");
+var ExPass=localStorage.getItem("NewPass1");
+
+Name.push(ExName); 
+Surname.push(ExSurn); 
+Username.push(ExUser); 
+Title1.push(ExTitle); 
+Age1.push(ExAge);
+Gender.push(ExGender); 
+
+getName=document.getElementById("txtName").value;
+getSurname=document.getElementById("txtSurname").value;
+getUser=document.getElementById("txtUser").value;
+Title=document.getElementById("cboCombo").value;
+AgeG=document.getElementById("cboAgeGroup").value;
+
+
+
+if(document.R.Male[0].checked)
+{
+getGender=document.R.Male[0].value;
+}
+if(document.R.Male[1].checked)
+{
+getGender=document.R.Male[1].value;
+}
+
+while (icount < Name.length)
+{
+if (getName==Name[icount] && getSurname==Surname[icount] && getUser==Username[icount] && Title==Title1[icount] && getGender==Gender[icount] && AgeG==Age1[icount])
+{
+alert("Account Matched!");
+getPass=prompt("Enter new password","Bob");
+alert("Password Changed");
+Password[icount]=getPass;
+alert(getName + ' password is ' + Password[icount]);
+localStorage.setItem("NewName2",getName);
+localStorage.setItem("NewUser2",getUser);
+localStorage.setItem("NewSurname2",getSurname);
+localStorage.setItem("NewPass2",getPass);
+localStorage.setItem("NewGender2",getGender);
+localStorage.setItem("NewTitle2",Title);
+localStorage.setItem("NewAge2",AgeG);
+localStorage.removeItem("NewName1",getName);
+localStorage.removeItem("NewUser1",getUser);
+localStorage.removeItem("NewSurname1",getSurname);
+localStorage.removeItem("NewPass1",getPass);
+localStorage.removeItem("NewGender1",getGender);
+localStorage.removeItem("NewTitle1",Title);
+localStorage.removeItem("NewAge1",AgeG);
+alert('Account Updated!');
+window.open('Login.html');
+
+Break;
+}
+icount++;
+}
+if (!getName || !getSurname || !getUser || !Title || !AgeG || (!document.R.Male[0].checked && document.R.Male[1].checked))
+{
+alert("You have left fields open");
+}
+if(getName!=Name[icount] && getSurname!=Surname[icount] && getUser!=Username[icount] && Title!=Title1[icount] && getGender!=Gender[icount] && AgeG!=Age1[icount]){
+		alert('Those details do not match with any of the accounts in our system!');
+	return false;
+		}
+}
+</script>
+<form name="R">
+	<body>
+		<div id="banner">
+		
+		</div>
+	
+		<div id="content">
+		
+		
+			
+				
+					<table id="tblContact" name="tblContact" align=center>
+					<h1 align=center>Recovery Form</h1>
+					<br>
+					<center>Fill in the details of the account you'd like to recover:</center>
+					<br>
+						<tr>
+							<td><label for="txtTitle" id="txtTitle">Title:</label></td>
+							
+							<td><select id="cboCombo" name="contact" value="">
+								<option></option>
+								<option>Mr.</option>
+								<option>Mrs.</option>
+								<option>Ms.</option>
+								<option>Other</option>
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtLab" id="Name">Name:</label></td>
+							<td><input type="text" id="txtName"/></td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtSurname" id="Surname">Surname:</label></td>
+							<td><input type="text" for="txtSurname" id="txtSurname"</td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtEmail" id="txtEmail">Username:</label></td>
+							<td><input type="text" id="txtUser"/></td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtGender" id="txtGender">Gender:</td>
+							<td>
+							<input type="radio" for="txtGender" id="rdoMale" name="Male" value="Male">Male:
+							<input type="radio" for="txtGender" id="rdoFemale" name="Male" value="Female">Female:
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtAgeGroup" id="txtAgeGroup">Age Group:</td>
+							<td><select id="cboAgeGroup" name="ageGroup">
+								<option></option>
+								<option>15 to 25</option>
+								<option>26 to 35</option>
+								<option>36 to 45</option>
+								<option>46 to 55</option>
+								<option>56 and Above</option>
+								</select>
+							</td>
+						</tr>
+						
+						
+					</table>
+					<br>
+					<br>
+					
+				
+							<center><div class="container">
+							<form action="Login.html">
+								<button class="btn btn1"onclick="information()" type="button">Recover Account</button>
+							</form>
+								<button class="btn btn2" onclick = "ClearControls()" type="reset">Clear Fields</button>
+								<button class="btn btn3"onclick="Return()" type="button">Return</button>
+							</div></center>
+							<br>
+							
+							
+							
+							</form>
+							
+	</body>
+</html>

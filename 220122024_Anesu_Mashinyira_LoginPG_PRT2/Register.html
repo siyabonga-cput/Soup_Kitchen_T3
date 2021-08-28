@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="RegisterStyleSheet.css" rel="StyleSheet" type="text/css">
+<link href="RegisterButtonStyle.css" rel="StyleSheet" type="text/css">
+
+</head>
+<script>
+function Return()
+{
+window.open('WelcomePage.html');
+close();
+}
+
+function information(form)
+{
+var getName;
+var getSurname;
+var getUser;
+var getPass;
+var getConfPass;
+var Title;
+var AgeG;
+var getGender;
+
+getName=document.getElementById("txtName").value;
+getSurname=document.getElementById("txtSurname").value;
+getUser=document.getElementById("txtUser").value;
+getPass=document.getElementById("txtPass").value;
+
+
+Title=document.getElementById("cboCombo").value;
+AgeG=document.getElementById("cboAgeGroup").value;
+
+if(document.V.Male[0].checked)
+{
+getGender=document.V.Male[0].value;
+
+}
+if(document.V.Male[1].checked)
+{
+getGender=document.V.Male[1].value;
+}
+
+if (!getName || !getSurname || !getUser || !getPass ||(!document.V.Male[0].checked && !document.V.Male[1].checked) ||document.getElementById("cboCombo").value=="" || document.getElementById("cboAgeGroup").value==""){
+alert("You have left fields open!");
+}
+else {
+localStorage.setItem("NewName1",getName);
+localStorage.setItem("NewUser1",getUser);
+localStorage.setItem("NewSurname1",getSurname);
+localStorage.setItem("NewPass1",getPass);
+localStorage.setItem("NewGender1",getGender);
+localStorage.setItem("NewTitle1",Title);
+localStorage.setItem("NewAge1",AgeG);
+alert('Your new account has been created!');
+window.open('Login.html');
+close();
+}
+}
+</script>
+<form name="V">
+	<body>
+		<div id="banner">
+		<h1>Registration Form</h1>
+		</div>
+	
+		<div id="content">
+		
+		
+			
+				<form id="frmContact" name="Contact">
+					<table id="tblContact" name="tblContact" align="center">
+						<tr>
+							<td><label for="txtTitle" id="txtTitle">Title:</label></td>
+							
+							<td><select id="cboCombo" name="contact" value="">
+								<option></option>
+								<option>Mr.</option>
+								<option>Mrs.</option>
+								<option>Ms.</option>
+								<option>Other</option>
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtName" id="Name">Name:</label></td>
+							<td><input type="text" id="txtName"/></td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtSurname" id="Surname">Surname:</label></td>
+							<td><input type="textbox" for="txtSurname" id="txtSurname"</td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtEmail" id="txtEmail">Username:</label></td>
+							<td><input type="text" id="txtUser"/></td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtGender" id="txtGender">Gender:</td>
+							<td>
+							<input type="radio" for="txtGender" id="rdoMale" name="Male" value="Male">Male:
+							<input type="radio" for="txtGender" id="rdoFemale" name="Male" value="Female">Female:
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label for="txtAgeGroup" id="txtAgeGroup">Age Group:</td>
+							<td><select id="cboAgeGroup" name="ageGroup">
+								<option></option>
+								<option>15 to 25</option>
+								<option>26 to 35</option>
+								<option>36 to 45</option>
+								<option>46 to 55</option>
+								<option>56 and Above</option>
+								</select>
+							</td>
+						</tr>
+						
+						<tr>
+							<tr>
+								<td><label for="txtPassword" id="txtPassword">Password:</label></td>
+								<td><input type="password" id="txtPass"/></td>
+							</tr>
+						</tr>
+							<tr>
+							</tr>
+							
+						<tr>
+							
+						</tr>
+					</table>
+					
+				</form>
+							<div class="container">
+								<button class="btn btn1"onclick="information()" type="button">Register</button>
+								<button class="btn btn2" onclick = "ClearControls()"type="reset">Clear Fields</button>
+								<button class="btn btn3"onclick="Return()"type="button">Return</button>
+							</div>
+							
+							
+							<div class="links">
+							Already a member?:<li><a href ="Login.html" class="styler">Login</a></li>
+							</div>
+							</form>
+							
+	</body>
+</html>

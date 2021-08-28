@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+	<meta charset="utf-8"> 
+	<link href="LoginButtonStyle.css" rel="stylesheet" type="text/css">
+	<link href="LoginStyleSheet.css" rel="stylesheet" type="text/css">
+	
+	<title>Login</title>
+	</head>
+	<h1>Soup Kitchen Login</h1>
+	<script>
+	//function to login user in
+	function accounts(form)
+	{
+	//declare variables
+	var Name=["Daniel"];	  
+	var Username=["Daniel123"];
+	var Password=["jadan0721"];
+	var Surname=["Marais"];
+	var Age1=["15 to 25"];
+	var Gender=["Male"];
+	var getUsername;
+	var getPassword;
+	var icount=0;
+	var ExSurn=localStorage.getItem("NewSurname1");
+	var ExUser=localStorage.getItem("NewUser1");
+	var ExPass=localStorage.getItem("NewPass1");
+	var ExName=localStorage.getItem("NewName1");
+	var ExGender=localStorage.getItem("NewGender1");
+	var ExAge=localStorage.getItem("NewAge1");
+	//retrieve localStorage values
+	var ExSurn1=localStorage.getItem("NewSurname2");
+	var ExUser1=localStorage.getItem("NewUser2");
+	var ExPass1=localStorage.getItem("NewPass2");
+	var ExName1=localStorage.getItem("NewName2");
+	var ExGender1=localStorage.getItem("NewGender2");
+	var ExAge1=localStorage.getItem("NewAge2");
+	
+	//initialise
+	Name.push(ExName);
+	Name.push(ExName1);
+	Surname.push(ExSurn);
+	Surname.push(ExSurn1);
+	Password.push(ExPass);
+	Password.push(ExPass1);
+	Username.push(ExUser);
+	Username.push(ExUser1);
+	Age1.push(ExAge);
+	Age1.push(ExAge1);
+	Gender.push(ExGender);
+	Gender.push(ExGender1);
+	
+	getUsername=document.getElementById("txtUsername").value;
+	getPassword=document.getElementById("txtPassword").value;
+	
+	//perform login process calculation
+	while(icount < Name.length){
+		if (getUsername == Username[icount] && getPassword == Password[icount]){
+		alert("Welcome" + " " + Name[icount] +" "+ Surname[icount]);
+		window.open('Home.html');
+		close();
+		break;
+		}
+		icount++;
+		}
+		if (!getUsername || !getPassword){
+		
+		alert('Please fill in all the fields!');
+		}
+		else if(Username!=Password){
+		alert('Username or password is incorrect!');
+		return false;
+		}
+		}
+	function Return()
+	 //create function to close page
+	{
+	window.open('WelcomePage.html');
+	close();
+	}
+	</script>
+	
+	<body>
+	
+	 Username: <input type="text" id="txtUsername"  name="User"></input>
+	 Password: <input type="password" id="txtPassword" name="Pass"></input>
+	 
+	 <div class="container">
+	 <form name="WelcomePage.html">
+	 <button class="btn btn1" onclick="accounts()" type="button">Proceed</button>
+	 <button class="btn btn2" id="return" onclick="Return()" type="button">Return</button>
+	 <br>
+	 <br>
+	 <br>
+	 </form>
+	 </div>	
+<div class="links">
+	Not a member yet?:<li><a href="Register.html" class="styler">Register</a></li>
+	Forgot Password?:<li><a href="Recovery.html" class="styler" onclick="send()">Recover</a></li>
+	</div>
+	 </body>
+</html>
