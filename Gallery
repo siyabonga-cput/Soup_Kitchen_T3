@@ -1,0 +1,135 @@
+>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="Soup Kitchen">
+			<meta name="keywords" content="Soup kitchen">
+			<meta name="author" content="Stop corruption">
+				<title>Some of the events that took place</title>
+				<link rel="stylesheet" href="./css/style.css">
+		</head>
+		
+		
+		<body>
+			<header>
+				<div class="container">
+				<div id="branding">
+					<h1>Corruption In <span class="highlight">-Soup kitchens</span></h1>
+				</div>
+				
+				<nav>
+					<ul>
+						<li class="current"><a href="Login.html">Gallery</a></li>
+						
+					</ul>
+				</nav>
+				
+				</div>
+			</header 
+			
+			<section id="showcase">
+				<div class="container">
+					<h1>Corruption in soup kitchens</h1>
+					<p>stop corruption people are hungry and your greedy tendcies wont help feed the million empthy homes</p>
+				</div>
+			</section>
+			
+
+			
+			<section id="boxes">
+				<div class="container">
+					<center><h1 class="page-title">Gallery Page</h1></center>
+					<center><p>Corruption in soup kitchens</p></center>
+					
+					<br/>
+				<center>Our plan is to stop corruption in soup kitchens and make the world a better place and also feed empthy stomachs, and provide jobs for people around our comunnities without any melicious intentions or anything to gain.<br></center><br>
+				<div class="box">
+					<img src="./images/tumi.jpg" style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>    </h3>
+				
+				
+				
+				
+
+				<div class="box">
+					<img src="./images/opo.jpg"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>   </h3>
+				
+				
+				<div class="box">
+					<img src="./images/olo.jpg"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>    </h3>
+				
+				
+				<div class="box">
+					<img src="./images/jj.jpg"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>  </h3>
+				
+				
+				<div class="box">
+					<img src="./images/kkk.jfif"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3> </h3>
+				
+				
+				<div class="box">
+					<img src="./images/god.jpg"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>    </h3>
+				
+				
+				<div class="box">
+					<img src="./images/hoe.jpg"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>   </h3>
+				
+				
+				<div class="box">
+					<img src="./images/home 1.jfif"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>   </h3>
+				
+				
+				<div class="box">
+					<img src="./images/momo.jpg"style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>    </h3>
+				
+				
+				<div class="box">
+					<img src="./images/slide.jfif" style="object-fit:fill;
+            width:500px;
+            height:600px;
+            border: solid 1px #CCC"/>
+					<h3>    </h3>
+				
+				
+				
+				
+				
+			
+					
+		</body>
+</html>
