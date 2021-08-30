@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: relative;
+  bottom: 0;
+  right: 100px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color:white ;
+  float:right;
+  height:194px;
+  
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  height:10px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color:#006400 ;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color:#006400;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  margin-bottom:30px;
+ 
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:red;
+   
+}
+
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 0.7;
+  
+}
+.open-button:hover {
+opacity: 0.7;
+color:#006400;
+}
+body {
+	text-align: center;
+}
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	height: 50px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+
+nav {
+	float: left;
+	line-height: 50px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+nav a:hover{
+	opacity: 0.7;
+	color:#006400;
+}
+/* 	START: Banner*/
+
+.banner-area {
+	width: 100%;
+	height: 229px;
+	position: fixed;
+	top: 50px;
+	background-color:#006400;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center left;
+}
+.banner-area h2 {
+	padding-top: 3%;
+	font-size: 40px;
+	font-family: poppins;
+	
+	color: white;
+}
+.banner-area p {
+	padding-top: 3%;
+	font-size: 25px;
+	font-family:poppins;
+	color: white;
+}
+/* 	START: Banner*/
+
+/* Add Styles to icons */
+.icon{
+width:80px;	
+background-color:white;
+height:70px;
+	
+}
+
+/* Start */
+.top-hero-section{
+background-color: #3498db;
+color: white;
+}
+.top-hero-section a{
+  color: white;
+  font-weight: 600;
+}
+.qualities-img{
+  width:250px;
+}
+/* END  */
+
+/* START */
+.requirements-section{
+  background-color: #004d80;
+  color: white;
+}
+/* END */
+
+
+/* START newsletter section */
+.home-newsletter{
+  background-color:#006400;
+  color: white;
+}
+.home-newsletter .form-control {
+	height: 50px;
+	width: 1000px;
+	border-color: transparent;
+	
+	
+}
+.home-newsletter .btn {
+	min-height: 50px;
+	width:100px;
+	background:red;
+	color: #fff;
+	
+}
+
+.home-newsletter .btn:hover{
+	opacity: 0.7;
+	color:#006400;
+}
+/* END newsletter section */
+
+/* 	START: Content*/
+.content-area {
+	width:1300px;
+	position: relative;
+	top: 280.99px;
+	background: #ebebeb;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center left;height: 4800px;
+	
+}
+.content-area h1{
+	padding: 50px;
+	font-family: poppins;
+	line-height: 20px;
+}
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.content-area h3 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 50px;
+	font-size: 40px;
+	margin: 0;
+}
+.content-area h4 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 50px;
+	font-size: 40px;
+	margin: 0;
+}
+.content-area p {
+	padding: 30px;
+	font-family: poppins;
+	line-height: 40px;
+}
+/* 	END: Content*/
+
+
+/* START : Footer */
+
+  
+}
+
+.bottom-footer p{
+  color:gray;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* END : Footer */

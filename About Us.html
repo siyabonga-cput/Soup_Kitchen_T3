@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Required meta tags -->
+	 <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- font awesome CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+		 <!-- sweetalert CSS -->
+	       <link href="scc.css" rel="stylesheet">
+	          <link rel="stylesheet" type="text/css" href="sweetalert.css"> 
+			    <title>About Us</title>
+          </head>
+	 <!--End header -->
+	 
+    <body>
+	   <div class="box-area">
+		   <header>
+			  <div class="wrapper">
+				</div>
+			<!--Navigation Bar-->	
+				<nav>
+					<a href="#">Home</a> <a href="#">About Us</a> <a href="#">Gallery</a> <a href="#">Contact</a> <a href="#">Register</a>
+				</nav>
+	<!--Sign up button-->
+  <button class="open-button" type="submit" <div style="width:100px; min-height:30px; background-color:white; font-family: Times New Roman ;color:red; float:right" onclick="openForm()">SIGN IN</button>
+    <!--End navigation bar -->
+	
+	          <!--Pop-up Form -->
+                  <div class="form-popup" id="myForm">
+                           <form  class="form-container">
+                              <label for="email" style="color:black"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" id="email" required>
+
+                                    <label for="psw" style="color:black"><b>Password</b></label>
+                                      <input type="password" placeholder="Enter Password" id="psw" required>
+
+                                          <button type="button" id="submit" class="btn" onclick="validation()">login</button>
+                                              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                                 </form>
+       <!--Javascript -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script>
+  function validation() {
+ 
+  swal("Thank you","Successfully Signed in", "success");
+ }
+ function myFunction() {
+ swal ("Thank you for subscribing ","you'll be notified of any alerts","success")
+ 
+ }
+ 
+
+  </script>
+</div>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</div>
+</header>
+
+     <!--Banner -->
+		<div class="banner-area">
+			<hr><h2>OUR MISSION</h2>
+			<hr><p>Stop corruption and promote transparency, accountability and 
+			integrity across all Soup Kitchens.</p>
+		  </div>
+		     <hr>
+<!--Content -->
+	<div class="content-area">
+		<div class="wrapper">
+		  <h2>ABOUT US</h2>
+			<hr><h1>We are in need to STOP the GREED in our soup kitchens</h1>
+			 <p style="font-size:18px">We are here to introduce honesty in dealing with food received, cooked, and distributed to the people by Soup kitchens, we acheive this by upgrading the technology in organisations. An end to corruption in soup kitchens is our plan, we end corruption by designing a website, creating a database and an app, handing out electronic monitors in organisations. if you join us . we are sure we can.</p>
+               <img class="icon" src="mission 2.png" ><img class="icon" src="mission 1.png" ><hr><h3>We stop corruption to help buid a better society for all.</h3>
+<!--Start Table-->			
+        <div style="width:100%;height:700px; background-color:#006400">
+      <table>
+            <tr>
+              <td>
+           <hr><br><img class="icon" src="goal.png" ></br><h3 style="color:white" >OUR GOAL</h3>
+         <hr><p style="color:white; font-size:18px">Help the less advantaged members of our communities to be fed regardless of their circumstances, 
+                     Make sure that the corruption occurring inside community soup kitchens is terminated. </p>
+               </td>
+                 </tr>
+
+                <tr>
+               <td>
+             <hr>
+              <br> <img class="icon" src="vision.png"></br><h4 style="color:white">OUR VISION</h4>
+                <hr><p style="color:white; font-size:18px" >Our vision is a world in which soup kitchens in our communities are free of corruption.</p>
+                  </td>
+                     </tr>
+            </table>
+           <hr>
+<!--End Table-->
+
+<!-- START : Newsletter section -->
+<section class="home-newsletter p-2 pt-md-2 pb-md-2">
+    <div class="row" id="demo">
+      <div class="col-12 text-center">
+        <h3>
+          Subscribe to our Newsletter
+        </h3>
+        <div class="input-group p-3">
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+          <span class="input-group-btn">
+		  <button class="btn btn-theme"type="button" onclick="myFunction()">Subscribe</</button>      
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- END : Home page 5th section - Newsletter section -->
+  
+  
+<!-- START : Our team -->
+<section class="pt-3 pb-4">
+      <div class="container">
+          <div class="row mt-4">
+            <div class="col text-center">
+              <h3>
+                Our awesome team
+              </h3>
+            </div>
+          </div>
+          <hr>
+      <div class="row">
+         <div class="col-md-4 text-center">
+              <img class="img-fluid qualities-img p-4" src="Siyakha.jpg">
+              <p>
+                <i>- Siyakha Manisi</i>
+              </p>
+            </div>
+         <div class="col-md-4 text-center">
+              <img class="img-fluid qualities-img p-4" src="Anne.jpg">
+              <p>
+                <i>- Anesu Mashinyira</i>
+              </p>
+            </div>
+         <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" src="Daniel_M.jpg">
+                <p>
+                  <i>- Daniel Maraisi</i>
+                </p>
+            </div>
+          </div>
+        <div class="row mb-md-3">
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" src="kululo2.jpg"> 
+                <p>
+                  <i>- Kululo Mangcunyana</i>
+                </p>
+            </div>
+        <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" src="Siyabonga.jpg">
+                <p>
+                  <i>- Siyabonga Masango</i>
+                </p>
+            </div>
+	<div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" src="sandile.jpg">
+                <p>
+                  <i>- Sandile Mantshi</i>
+                </p>
+            </div>			
+     </section>
+<!-- END : Our team -->
+
+<!-- START : Footer-->
+   <footer class="full-footer"  style="width:1000px">
+      <div class="container top-footer p-md-3 p-1" >
+         <div class="row">
+            <div class="col-md-3 pl-4 pr-4">
+        </div>
+	</div>
+   </div>
+    <div class="container-fluid bottom-footer pt-2">
+      <div class="row">
+        <div class="col-12 text-center">
+		 <h4 style="color:black; font-size:20px"> CONTACT US</h4>
+            <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+          <p>Copyrights © 2021 - All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- END : Footer-->	
+</div>
+  </div>
+	</div>
+       </body>
+          </html>
